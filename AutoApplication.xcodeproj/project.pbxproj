@@ -81,15 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				FA465F8825D0428100FE3482 /* Models */,
-				FA465F6925D029B700FE3482 /* AppDelegate.swift */,
-				FA465F6B25D029B700FE3482 /* SceneDelegate.swift */,
+				FA53F12425DE431C00B79AD1 /* Delegates */,
 				FA465F7F25D033BC00FE3482 /* ViewControllers */,
-				FA465F6F25D029B700FE3482 /* Main.storyboard */,
-				FA465F7225D029B800FE3482 /* Assets.xcassets */,
-				FA465F7425D029B800FE3482 /* LaunchScreen.storyboard */,
-				FA465F7725D029B800FE3482 /* Info.plist */,
+				FA53F12625DE437D00B79AD1 /* Storyboards */,
 				FA465F8625D033F600FE3482 /* Cells */,
-				FA56E34825D27765002E6139 /* SettingsTableViewController.swift */,
+				FA465F7225D029B800FE3482 /* Assets.xcassets */,
+				FA465F7725D029B800FE3482 /* Info.plist */,
 			);
 			path = AutoApplication;
 			sourceTree = "<group>";
@@ -97,6 +94,7 @@
 		FA465F7F25D033BC00FE3482 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA56E34825D27765002E6139 /* SettingsTableViewController.swift */,
 				FA465F6D25D029B700FE3482 /* ProfileViewController.swift */,
 				FA4F883425D1338600BDF418 /* FullScreenViewController.swift */,
 				FA56E34B25D2DF54002E6139 /* FriendsViewController.swift */,
@@ -125,6 +123,24 @@
 				FA56E35125D2DFAD002E6139 /* ModelUser.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FA53F12425DE431C00B79AD1 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FA465F6925D029B700FE3482 /* AppDelegate.swift */,
+				FA465F6B25D029B700FE3482 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FA53F12625DE437D00B79AD1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA465F6F25D029B700FE3482 /* Main.storyboard */,
+				FA465F7425D029B800FE3482 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

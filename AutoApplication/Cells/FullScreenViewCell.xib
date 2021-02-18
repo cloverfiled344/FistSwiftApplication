@@ -16,21 +16,35 @@
                 <rect key="frame" x="0.0" y="0.0" width="211" height="123"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mEA-Jc-CG2">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBP-fK-wif">
                         <rect key="frame" x="0.0" y="0.0" width="211" height="123"/>
-                    </imageView>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RRW-te-j4n">
+                                <rect key="frame" x="0.0" y="0.0" width="211" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="RRW-te-j4n" secondAttribute="width" id="4zL-xQ-Rhn"/>
+                            <constraint firstAttribute="height" secondItem="RRW-te-j4n" secondAttribute="height" multiplier="0.960938" id="OlV-wH-58X"/>
+                            <constraint firstAttribute="trailing" secondItem="RRW-te-j4n" secondAttribute="trailing" id="QsZ-Ra-ebz"/>
+                            <constraint firstItem="RRW-te-j4n" firstAttribute="leading" secondItem="DBP-fK-wif" secondAttribute="leading" id="k86-wt-sTu"/>
+                            <constraint firstAttribute="bottom" secondItem="RRW-te-j4n" secondAttribute="bottom" id="kbS-iB-4PI"/>
+                            <constraint firstItem="RRW-te-j4n" firstAttribute="top" secondItem="DBP-fK-wif" secondAttribute="top" id="rsS-R7-tDN"/>
+                        </constraints>
+                    </scrollView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="mEA-Jc-CG2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1Sk-w7-Ccd"/>
-                <constraint firstAttribute="trailing" secondItem="mEA-Jc-CG2" secondAttribute="trailing" id="Vtz-Is-5D6"/>
-                <constraint firstAttribute="bottom" secondItem="mEA-Jc-CG2" secondAttribute="bottom" id="cfZ-FA-gCx"/>
-                <constraint firstItem="mEA-Jc-CG2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wmW-aE-9Zh"/>
+                <constraint firstItem="DBP-fK-wif" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0uh-Ux-ImO"/>
+                <constraint firstItem="DBP-fK-wif" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="caQ-99-Kyo"/>
+                <constraint firstAttribute="bottom" secondItem="DBP-fK-wif" secondAttribute="bottom" id="pgC-Nx-6VH"/>
+                <constraint firstAttribute="trailing" secondItem="DBP-fK-wif" secondAttribute="trailing" id="yuE-iq-bTw"/>
             </constraints>
             <size key="customSize" width="211" height="123"/>
             <connections>
-                <outlet property="photoView" destination="mEA-Jc-CG2" id="t3y-2a-E2O"/>
+                <outlet property="photoView" destination="RRW-te-j4n" id="9al-a8-dc0"/>
+                <outlet property="scrollView" destination="DBP-fK-wif" id="Bkd-Zi-oYB"/>
             </connections>
             <point key="canvasLocation" x="186.23188405797103" y="100.11160714285714"/>
         </collectionViewCell>
